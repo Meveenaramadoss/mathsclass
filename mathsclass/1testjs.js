@@ -5,20 +5,19 @@ function    Q1() {
    document.getElementById(number1).innerHTML = number1;
    document.getElementById(number2).innerHTML = number2;
    answer.innerHTML = answer;
+} 
 
+function Generate() {
+    var min = 1,
+        max = 5,
+        NumberResult = Math.random() * (max - min) + min;
 
+    $('#text1').val(parseFloat(NumberResult).toFixed( 2 ));
+};
 
-}
-
-function t03() {
-    let first = parseInt(document.getElementById("first").value);
-    let second = parseInt(document.getElementById("second").value);
-    let third = parseInt(document.getElementById("third").value);
-    let average = ((first + second + third)/3)
-
-document.getElementById("average").innerHTML = average;
-
-}
+$( document ).ready(function() {
+DecimalGenerate();
+});
 
 
 
